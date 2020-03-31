@@ -21,7 +21,7 @@ pigeon_with_attributes = {
   :lives => []
 }
 
-#note: this adds an attribute to the relevant hash for the each pigeon
+#note: this adds an attribute (as a String) to the relevant hash for the each pigeon
   data.each_key do |attribute_key|
     data[attribute_key].each do |key, value|
       if value.include?(pigeon_names_unique[i])
@@ -56,6 +56,3 @@ pigeon_with_attributes = {
  end
 pp new_hash
 end
-
-
-
