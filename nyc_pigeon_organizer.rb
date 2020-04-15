@@ -4,7 +4,7 @@ def nyc_pigeon_organizer(data)
   data.each do |key, values|
     values.each do |value, names_array|
       names_array.each do |name|
-        pigeon_list[name] ||= {}
+        pigeon_list[name] ||= {} 
         pigeon_list[name][key] ||= []
         pigeon_list[name][key] << value.to_s
       end
@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
   end
   pigeon_list
 end
-=end
+
 
 =begin 
 Ruby's ||= (or equal) operator
@@ -20,7 +20,7 @@ Ruby's ||= operator is a handy way to assign variables if they are not defined y
 =end 
 
 #another solution
-
+=begin
 def nyc_pigeon_organizer(data)
   pigeon_list = {}
 
@@ -54,3 +54,4 @@ def nyc_pigeon_organizer(data)
   end
   pigeon_list
 end
+=end
